@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>产品秒杀</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/csst9402.css"/>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body class="body">
+		<div class="header">
+			<!--<a href="javascript:history.back();"><i class="iconfont">&#xe697;</i></a>-->
+			<h4>产品秒杀</h4>
+		</div>
+		<div class="yqg-content">
+			<div class="banner-border">
+				<div class="swiper-container swiper-container-horizontal">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/banner.png">
+						</div>
+					
+						<div class="swiper-slide">
+							<img src="img/banner.png">
+						</div>
+					
+						<div class="swiper-slide">
+							<img src="img/banner.png">
+						</div>
+						
+						<div class="swiper-slide">
+							<img src="img/banner.png">
+						</div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+				</div>
+			</div>
+			<div class="yqg-nr-nr1">
+				<p class="hwhd">限时购</p>
+			</div>
+			<div class="yqg-nr-nr2 cpmiaosha">
+				<ul>
+					<li>
+						<div class="waibu jiabj2">
+							<p>抢购中</p>
+						</div>
+					</li>
+					<li class="linhei">
+						<div class="waibu">
+							<p>即将开奖(2)</p>
+						</div>
+					</li>
+					<li class="cpmiaosha-li01 linhei">
+						<div class="waibu">
+							<p>距开奖：06:52:30</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="cpms-nr">
+				<div class="cpms-nr-top">
+					<ul>
+						<li class="cpms-nr-top-1 xuaz">全部产品</li>
+						<li class="cpms-nr-top-2">特价秒杀</li>
+						<li class="cpms-nr-top-3">户外产品</li>
+					</ul>
+				</div>
+				<div class="yqg-nr-nr3-nr cpms-1">
+					<ul>
+						<li class="cpms-1li01">
+							<img src="img/cpms1.png"/>
+						</li>
+						<li class="nr3-nrli01 cpms-1li02">
+							冷冻荔枝（1袋500G） 
+							<p class="yishou">已售566  丨 还剩360  价格：￥8.60</p>
+							<p class="jiaf">价格：￥8.60</p>
+						</li>
+						<li class="nr3-nrli02 cpms-1li03">
+							<input type="button" name="" id="" value="购物车" />
+						</li>
+					</ul>
+				</div>
+				<div class="yqg-nr-nr3-nr cpms-1">
+					<ul>
+						<li class="cpms-1li01">
+							<img src="img/cpms1.png"/>
+						</li>
+						<li class="nr3-nrli01 cpms-1li02">
+							冷冻荔枝（1袋500G） 
+							<p class="yishou">已售566  丨 还剩360  价格：￥8.60</p>
+							<p class="jiaf">价格：￥8.60</p>
+						</li>
+						<li class="nr3-nrli02 cpms-1li03">
+							<input type="button" name="" id="" value="购物车" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div style="height: 5em;"></div>
+		<div class="dibu">
+			<ul>
+				<a href="index.html">
+					<li>
+						<i class="iconfont">&#xe897;</i>
+						<p>首页</p>
+					</li>
+				</a>
+				<a href="易抢购.html">
+					<li>
+						<i class="iconfont">&#xe88e;</i>
+						<p>易抢购</p>
+					</li>
+				</a>
+				<a href="产品秒杀.html" class="active">
+					<li>
+						<i class="iconfont">&#xe671;</i>
+						<p>产品秒杀</p>
+					</li>
+				</a>
+				<a href="wode.html">
+					<li>
+						<i class="iconfont">&#xe881;</i>
+						<p>我的</p>
+					</li>
+				</a>
+			</ul>
+		</div>
+		<!--轮播图-->
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container', {
+				direction : 'horizontal',
+				loop : true,
+				autoplay : true
+			})
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$('.cpms-nr-top-1').click(function(){
+					$('.cpms-nr-top-1').addClass('xuaz');
+					$('.cpms-nr-top-2').removeClass('xuaz');
+					$('.cpms-nr-top-3').removeClass('xuaz');
+				});
+				$('.cpms-nr-top-2').click(function(){
+					$('.cpms-nr-top-2').addClass('xuaz');
+					$('.cpms-nr-top-1').removeClass('xuaz');
+					$('.cpms-nr-top-3').removeClass('xuaz');
+				});
+				$('.cpms-nr-top-3').click(function(){
+					$('.cpms-nr-top-3').addClass('xuaz');
+					$('.cpms-nr-top-2').removeClass('xuaz');
+					$('.cpms-nr-top-1').removeClass('xuaz');
+				});
+			})
+		</script>
+	</body>
+</html>

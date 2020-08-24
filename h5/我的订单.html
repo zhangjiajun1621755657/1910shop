@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/csst9402.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body class="body">
+		<div class="header">
+			<a href="javascript:history.back();"><i class="iconfont">&#xe697;</i></a>
+			<h4>订单</h4>
+		</div>
+		<div class="wddd-content">
+			<div class="wddd-nr-top">
+				<ul>
+					<li class="cpms-nr-top-1 xuaz">全部</li>
+					<li class="cpms-nr-top-2">待付款</li>
+					<li class="cpms-nr-top-3">待发货</li>
+					<li class="cpms-nr-top-4">待收货</li>
+					<li class="cpms-nr-top-5">已完成</li>
+				</ul>
+			</div>
+			<a href="订单详情.html">
+				<div class="wddd-nr">
+					<p class="ddhao">订单号：201910404656<span class="dfkuan">待付款</span></p>
+					<div class="ddannr">
+						<ul>
+							<li class="ddannr-li01"><img src="img/ddan1.png"/></li>
+							<li class="ddannr-li02">
+								<p>女士风衣春秋2018新款端庄大气…</p>
+								<p class="jiage-dand">原价￥200.00</p>
+								<p class="jiage-dd">￥199.00</p>
+							</li>
+							<li class="ddannr-li03">
+								<p>×1</p>
+								<p class="heji2">合计：￥<span>199.00</span></p>
+							</li>
+							<div class="caozuo">
+								<input type="button" name="" id="" value="取消订单" class="txfh" />
+								<input type="button" name="" id="" value="立即付款" class="ljfk" />
+							</div>
+						</ul>
+					</div>
+				</div>
+			</a>
+			<a href="订单详情.html">
+				<div class="wddd-nr">
+					<p class="ddhao">订单号：201910404656<span class="dfkuan">待付款</span></p>
+					<div class="ddannr">
+						<ul>
+							<li class="ddannr-li01"><img src="img/ddan1.png"/></li>
+							<li class="ddannr-li02">
+								<p>女士风衣春秋2018新款端庄大气…</p>
+								<p class="jiage-dand">原价￥200.00</p>
+								<p class="jiage-dd">￥199.00</p>
+							</li>
+							<li class="ddannr-li03">
+								<p>×1</p>
+								<p class="heji">合计：￥<span>199.00</span></p>
+							</li>
+							<div class="caozuo">
+								<input type="button" name="" id="" value="提醒发货" class="txfh" />
+								<input type="button" name="" id="" value="已付款" class="ljfk huise2" />
+							</div>
+						</ul>
+					</div>
+				</div>
+			</a>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.cpms-nr-top-1').click(function(){
+					$('.cpms-nr-top-1').addClass('xuaz');
+					$('.cpms-nr-top-2').removeClass('xuaz');
+					$('.cpms-nr-top-3').removeClass('xuaz');
+					$('.cpms-nr-top-4').removeClass('xuaz');
+					$('.cpms-nr-top-5').removeClass('xuaz');
+				});
+				$('.cpms-nr-top-2').click(function(){
+					$('.cpms-nr-top-2').addClass('xuaz');
+					$('.cpms-nr-top-1').removeClass('xuaz');
+					$('.cpms-nr-top-3').removeClass('xuaz');
+					$('.cpms-nr-top-4').removeClass('xuaz');
+					$('.cpms-nr-top-5').removeClass('xuaz');
+				});
+				$('.cpms-nr-top-3').click(function(){
+					$('.cpms-nr-top-3').addClass('xuaz');
+					$('.cpms-nr-top-2').removeClass('xuaz');
+					$('.cpms-nr-top-1').removeClass('xuaz');
+					$('.cpms-nr-top-4').removeClass('xuaz');
+					$('.cpms-nr-top-5').removeClass('xuaz');
+				});
+				$('.cpms-nr-top-4').click(function(){
+					$('.cpms-nr-top-4').addClass('xuaz');
+					$('.cpms-nr-top-2').removeClass('xuaz');
+					$('.cpms-nr-top-1').removeClass('xuaz');
+					$('.cpms-nr-top-3').removeClass('xuaz');
+					$('.cpms-nr-top-5').removeClass('xuaz');
+				});
+				$('.cpms-nr-top-5').click(function(){
+					$('.cpms-nr-top-5').addClass('xuaz');
+					$('.cpms-nr-top-2').removeClass('xuaz');
+					$('.cpms-nr-top-1').removeClass('xuaz');
+					$('.cpms-nr-top-4').removeClass('xuaz');
+					$('.cpms-nr-top-3').removeClass('xuaz');
+				});
+			})
+		</script>
+	</body>
+</html>

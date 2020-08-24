@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>充值申请</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/csst9402.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<a href="javascript:history.back();"><i class="iconfont">&#xe697;</i></a>
+			<h4>充值申请</h4>
+		</div>
+		
+		<div class="czsq-content">
+			<div class="fenge"></div>
+			<div class="czsq-nr">
+				<span>账号余额</span>
+				<p>0.00元</p>
+			</div>
+			<div class="fenge"></div>
+			<div class="czsq-nr dianji">
+				<span>选择方式</span>
+				<p>请选择<i class="iconfont qianjin">&#xe6a7;</i></p>
+				
+			</div>
+			<div class="fenge"></div>
+			<div class="czsq-nr">
+				<span>选择方式</span>
+				<input type="text" name="" id="" value="" placeholder="请输入充值金额" />
+			</div>
+			<div class="fenge2"></div>
+			<div class="shuoming">充值金额必须为100的整数倍</div>
+			<div class="login-nr-dl matop">
+				<input type="button" name="" id="" value="确认充值"  />
+			</div>
+		</div>
+		<div style="height: 4em;"></div>
+		<!--弹窗-->
+		<div class="currency" id="currency">
+			<div class="tanc-top">
+				<i class="iconfont guanbi">&#xe87d;</i>请选择
+			</div>
+			<div class="tanc-nr">
+				<i class="iconfont weixin">&#xe721;</i>微信
+				<input type="radio" name="" id="" value="" />
+			</div>
+			<div class="tanc-nr">
+				<i class="iconfont yhk">&#xe874;</i>添加银行卡
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.dianji').click(function(){
+					layer.open({
+			            type:1,
+			            title:0,
+			            closeBtn:0,
+			            btn:0,
+			            shadeClose:true,
+			            anim:2,
+			            offset:'b',
+			            area:['100%','auto'],
+			            content:$('#currency'),
+			       });
+				});
+				$('.guanbi').click(function(){
+					layer.close(layer.index);
+				})
+			});
+		</script>
+	</body>
+</html>
